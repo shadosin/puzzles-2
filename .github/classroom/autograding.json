@@ -1,0 +1,64 @@
+{
+  "tests": [
+    {
+      "name": "Greedy Backpacking",
+      "setup": "",
+      "run": "./gradlew greedy-backpacking-test --rerun-tasks",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Greedy MeetingRoom",
+      "setup": "",
+      "run": "./gradlew greedy-meetingroom-test --rerun-tasks",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "SlidingWindow DistinceElements",
+      "setup": "",
+      "run": "./gradlew slidingwindow-distinctelements-test --rerun-tasks",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "SlidingWindow MinimumSumSubset",
+      "setup": "",
+      "run": "./gradlew slidingwindow-minimumsumsubset-test --rerun-tasks",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "TwoPointer ContainerWithMostWater",
+      "setup": "",
+      "run": "./gradlew twopointer-containerwithmostwater-test --rerun-tasks",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "TwoPointer ThreeSum",
+      "setup": "",
+      "run": "./gradlew twopointer-threesum-test --rerun-tasks",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
