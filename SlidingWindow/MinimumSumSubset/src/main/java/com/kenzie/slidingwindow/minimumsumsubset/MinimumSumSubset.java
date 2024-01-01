@@ -24,7 +24,19 @@ public class MinimumSumSubset {
     public static int findMinimumSum(List<Integer> input, int k) {
         // TODO: Implement an algorithm that utilizes the sliding window technique
 
-        return -1;
+        if (input == null || input.isEmpty() || k < 1 || k > input.size()) {
+            throw new IllegalArgumentException("Invalid input or k value");
+        }
+        int windowSum = 0;
+        for (int i = 0; i < k; i++) {
+            windowSum += input.get(i);
+        }
+        int minSum = windowSum;
+        for (int i = k; i < input.size(); i++) {
+            windowSum = windowSum + input.get(i) - input.get(i - k);
+            minSum = Math.min(minSum, windowSum);
+        }
+        return minSum;
     }
 
 }

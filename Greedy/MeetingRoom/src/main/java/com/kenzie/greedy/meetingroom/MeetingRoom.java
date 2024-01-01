@@ -1,5 +1,7 @@
 package com.kenzie.greedy.meetingroom;
 
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 /**
@@ -23,6 +25,16 @@ public class MeetingRoom {
      */
     public static int getMaximumMeetings(List<Meeting> meetings) {
         // TODO: Implement an algorithm that utilizes the greedy technique
-        return -1;
+        Collections.sort(meetings, Comparator.comparingInt(Meeting::getEndTime));
+
+        int maxMeetings = 0;
+        int lastEndTime = Integer.MIN_VALUE;
+        for (Meeting meeting : meetings) {
+            if (meeting.getStartTime() >= lastEndTime) {
+                maxMeetings++;
+                lastEndTime = meeting.getEndTime();
+            }
+        }
+        return maxMeetings;
     }
 }
